@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Interact Club Ruspina Monastir — Des jeunes. Des idées. Des actions. Un impact.</title>
+  <meta name="description" content="Site officiel de l’Interact Club Ruspina Monastir : un club de jeunes engagé dans le service, le leadership et la création d’un impact positif au sein de sa communauté.">
+  <meta name="theme-color" content="#07102B">
+  <link rel="icon" type="image/png" href="assets/logos/favicon-icrm.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#introduction">Aller au contenu</a>
+
+<!-- ======================= NAVIGATION ======================= -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#hero" aria-label="Interact Club Ruspina Monastir — Accueil">
+      <img data-media="ICRM_LOGO" alt="" width="1000" height="392">
+      <span>ICRM</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#hero" data-nav="hero">Accueil</a>
+      <a href="#introduction" data-nav="introduction club">Le club</a>
+      <a href="#actions" data-nav="actions">Nos actions</a>
+      <a href="#team" data-nav="team">Bureau exécutif</a>
+      <a href="#partners" data-nav="partners">Sponsors</a>
+      <a href="#impact" data-nav="impact">Impact</a>
+      <a href="#contact" data-nav="vision contact">Contact</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="progress"></i></div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu__inner" aria-label="Menu mobile">
+    <a href="#hero"><span>Accueil</span></a>
+    <a href="#introduction"><span>Le club</span></a>
+    <a href="#actions"><span>Nos actions</span></a>
+    <a href="#team"><span>Bureau exécutif</span></a>
+    <a href="#partners"><span>Sponsors</span></a>
+    <a href="#impact"><span>Impact</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </nav>
+  <p class="menu__foot">Interact Club Ruspina Monastir<br>Rotary Club Monastir</p>
+</div>
+
+<main id="main">
+
+<!-- ======================= 01 — HERO ======================= -->
+<section class="hero" id="hero" aria-label="Interact Ruspina Monastir">
+  <div class="hero__stick">
+    <div class="hero__media">
+      <video id="heroVideo" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1"></video>
+      <div class="hero__shade"></div>
+    </div>
+
+    <svg class="hero__rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+      <circle cx="200" cy="200" r="198"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="102"/>
+    </svg>
+
+    <div class="hero__content wrap">
+      <img class="hero__logo" data-media="ICRM_LOGO" alt="Logo de l’Interact Club Ruspina Monastir" width="1000" height="392">
+      <h1 class="hero__title" aria-label="Interact Club Ruspina Monastir">
+        <span class="ln"><span>INTERACT CLUB</span></span>
+        <span class="ln"><span>RUSPINA</span></span>
+        <span class="ln"><span>MONASTIR</span></span>
+      </h1>
+      <div class="hero__row">
+        <div class="hero__copy">
+          <h2 class="hero__tag">
+            <span>Des jeunes.</span> <span>Des idées.</span> <span>Des actions.</span> <span class="hl">Un impact.</span>
+          </h2>
+          <p class="hero__lead">Un club de jeunes engagé dans le service, le leadership et la création d’un impact positif au sein de sa communauté.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#introduction">DÉCOUVRIR LE CLUB</a>
+            <a class="btn btn--ghost" href="#actions">NOS ACTIONS</a>
+          </div>
+        </div>
+        <div class="hero__tools">
+          <button class="vctl" id="heroToggle" type="button" aria-label="Mettre la vidéo en pause">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+          </button>
+          <a class="scrollcue" href="#introduction" aria-label="Défiler vers le bas"><span>Défiler</span><i></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 02 — INTRODUCTION ======================= -->
+<section class="intro" id="introduction" aria-labelledby="introTitle">
+  <div class="wrap">
+    <h2 class="sr-only" id="introTitle">Du Rotary à l’Interact Club Ruspina Monastir</h2>
+
+    <div class="chain" id="chain">
+      <div class="chain__line" aria-hidden="true"><i></i></div>
+
+      <article class="station" data-reveal="scale">
+        <div class="station__badge"><img data-media="ROTARY_LOGO" alt="Logo du Rotary International" loading="lazy" width="160" height="160"></div>
+        <div class="station__text">
+          <h3 class="station__title"><span class="ln"><span>Le Rotary</span></span></h3>
+          <p>Le Rotary est une organisation internationale dédiée au service humanitaire et à la promotion de la paix. Créé en 1905, il regroupe des membres actifs dans plus de 200 pays et régions du monde.</p>
+        </div>
+      </article>
+
+      <article class="station" data-reveal="scale">
+        <div class="station__badge"><img data-media="INTERACT_LOGO" alt="Logo de l’Interact Club" loading="lazy" width="160" height="160"></div>
+        <div class="station__text">
+          <h3 class="station__title"><span class="ln"><span>L’Interact</span></span></h3>
+          <p>L’Interact est un club de service destiné aux jeunes âgés de 12 à 18 ans. Parrainé par des clubs Rotary, il bénéficie de leur soutien et de leurs conseils. Avec plus de 250 000 membres répartis dans 11 000 clubs à travers le monde, l’Interact joue un rôle clé dans l’engagement des jeunes au service de leur communauté.</p>
+        </div>
+      </article>
+
+      <article class="station station--final" data-reveal="scale">
+        <div class="station__badge station__badge--blue"><img data-media="ICRM_LOGO" alt="" loading="lazy" width="1000" height="392"></div>
+        <div class="station__text">
+          <h3 class="station__title"><span class="ln"><span>Interact Club Ruspina Monastir</span></span></h3>
+          <p>Parrainé par le Rotary Club Monastir. Fondé le 2 septembre 2015.</p>
+          <a class="textlink" href="#club">Qui sommes-nous</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 03 — QUI SOMMES-NOUS ======================= -->
+<section class="club" id="club" aria-labelledby="clubTitle">
+  <div class="wrap">
+    <header class="club__head">
+      <h2 class="h1" id="clubTitle" data-reveal="lines">
+        <span class="ln"><span>QUI SOMMES-</span></span>
+        <span class="ln"><span>NOUS ?</span></span>
+      </h2>
+      <p class="club__sub" data-reveal="fade">INTERACT CLUB RUSPINA MONASTIR</p>
+    </header>
+  </div>
+
+  <div class="club__stage">
+    <figure class="club__photo" id="clubPhoto">
+      <img data-media="CLUB_PHOTO" alt="Les membres de l’Interact Club Ruspina Monastir réunis, vêtus de blanc, souriants" loading="lazy" width="1080" height="720">
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <dl class="facts" data-reveal="fade">
+      <div><dt>Fondation</dt><dd>2 septembre 2015</dd></div>
+      <div><dt>Tranche d’âge</dt><dd>14 à 18 ans</dd></div>
+      <div><dt>Club parrain</dt><dd>Rotary Club Monastir</dd></div>
+      <div><dt>Gouvernance</dt><dd>Par les jeunes, pour les jeunes</dd></div>
+    </dl>
+
+    <blockquote class="club__text" data-reveal="fade">
+      <p class="lead">L’Interact Club Ruspina Monastir (ICRM) est un club de service à but non lucratif, parrainé par le Rotary Club Monastir.</p>
+      <p>Destiné aux jeunes âgés de 14 à 18 ans, il est géré par les jeunes et pour les jeunes, offrant un espace d’engagement, d’apprentissage et de développement personnel.</p>
+      <p>Fondé le 2 septembre 2015, notre club partage, avec tous les Interact Clubs de Tunisie, les mêmes valeurs et la même mission : servir la communauté, former les jeunes au leadership, encourager leur épanouissement et générer un impact positif à l’échelle locale, nationale et internationale.</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ======================= 04 — NOS ACTIONS ======================= -->
+<section class="actions" id="actions" aria-labelledby="actionsTitle">
+  <div class="wrap actions__head">
+    <h2 class="h1" id="actionsTitle" data-reveal="lines"><span class="ln"><span>NOS ACTIONS</span></span></h2>
+    <p class="actions__sub" data-reveal="fade">Des idées transformées en actions. Des actions transformées en impact.</p>
+    <div class="tabs" role="group" aria-label="Catégories d’actions">
+      <button type="button" class="tab is-on" data-cat="financiere">FINANCIÈRES</button>
+      <button type="button" class="tab" data-cat="humanitaire">HUMANITAIRES</button>
+    </div>
+  </div>
+
+  <div class="rail" id="rail" tabindex="0" role="region" aria-roledescription="carrousel" aria-label="Les sept actions du club. Utilisez les flèches gauche et droite pour naviguer."></div>
+
+  <div class="wrap rail__ctrl">
+    <div class="rail__count" aria-live="polite"><b id="railNow">01</b><span>/</span><span id="railTotal">07</span></div>
+    <div class="rail__bar" aria-hidden="true"><i id="railBar"></i></div>
+    <div class="rail__btns">
+      <button type="button" class="rbtn" id="prev" aria-label="Action précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" class="rbtn" id="next" aria-label="Action suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 05 — NOTRE BUREAU EXÉCUTIF ======================= -->
+<section class="team" id="team" aria-labelledby="teamTitle">
+  <div class="wrap">
+    <h2 class="h1" id="teamTitle" data-reveal="lines">
+        <span class="ln"><span>NOTRE BUREAU</span></span>
+        <span class="ln"><span>EXÉCUTIF</span></span>
+    </h2>
+    <ul class="team__grid" id="teamGrid"></ul>
+  </div>
+</section>
+
+<!-- ======================= 06 — NOS SPONSORS ======================= -->
+<section class="partners" id="partners" aria-labelledby="partnersTitle">
+  <div class="wrap">
+    <h2 class="h1" id="partnersTitle" data-reveal="lines"><span class="ln"><span>NOS SPONSORS</span></span></h2>
+    <p class="partners__sub" data-reveal="fade">Les projets prennent vie grâce aux collaborations.</p>
+    <ul class="sponsors" id="sponsorGrid"></ul>
+  </div>
+</section>
+
+<!-- ======================= 07 — IMPACT ======================= -->
+<section class="impact" id="impact" aria-labelledby="impactTitle">
+  <div class="wrap">
+    <header class="impact__head">
+      <h2 class="h1" id="impactTitle" data-reveal="lines">
+        <span class="ln"><span>NOTRE</span></span>
+        <span class="ln"><span>IMPACT</span></span>
+      </h2>
+      <p class="impact__sub" data-reveal="fade">Ce que nos actions ont rendu possible.</p>
+    </header>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<!-- ======================= 08 — NOTRE VISION ======================= -->
+<section class="vision" id="vision" aria-labelledby="visionTitle">
+  <div class="vision__stick">
+    <svg class="vision__ring" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><circle cx="200" cy="200" r="198"/><circle cx="200" cy="200" r="140"/></svg>
+    <div class="wrap vision__inner">
+      <h2 class="vision__title" id="visionTitle"><span class="ln"><span>ET APRÈS ?</span></span></h2>
+      <p class="vision__text" id="visionText">Chaque action ouvre la voie à une nouvelle initiative, une nouvelle collaboration et un nouvel impact.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 09 — CONTACT ======================= -->
+<section class="contact" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap">
+    <h2 class="contact__title" id="contactTitle" data-reveal="lines"><span class="ln"><span>PARLONS.</span></span></h2>
+
+    <div class="choices">
+      <a class="choice" id="ctaJoin" href="#contact-details">
+        <span class="choice__t">REJOINDRE LE CLUB</span>
+        <span class="choice__a" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="choice" id="ctaPartner" href="#contact-details">
+        <span class="choice__t">DEVENIR PARTENAIRE</span>
+        <span class="choice__a" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+
+    <ul class="details" id="contact-details">
+      <li><span>Email</span><b id="dEmail"></b></li>
+      <li><span>Téléphone</span><b id="dPhone"></b></li>
+      <li><span>Instagram</span><b id="dInsta"></b></li>
+    </ul>
+
+    <p class="closing" data-reveal="lines">
+      <span class="ln"><span><img data-media="END_GRAPHIC" alt="Create lasting impact" loading="lazy" width="550" height="328"></span></span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__id">
+      <img data-media="ICRM_LOGO" alt="" width="1000" height="392" loading="lazy">
+      <p><b>Interact Club Ruspina Monastir</b><br>Rotary Club Monastir</p>
+    </div>
+    <p class="footer__note">Des jeunes. Des idées. Des actions. Un impact.</p>
+  </div>
+  <div class="wrap">
+    <p class="footer__credit">Conçu &amp; développé par <b>Hachem Zaier</b></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
