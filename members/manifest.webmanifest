@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Interact Club Ruspina Monastir — Espace Membres",
+  "short_name": "ICRM Membres",
+  "description": "L’espace membres officiel de l’Interact Club Ruspina Monastir.",
+  "lang": "fr-TN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07102B",
+  "theme_color": "#07102B",
+  "prefer_related_applications": false,
+  "categories": ["education", "productivity", "social"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
