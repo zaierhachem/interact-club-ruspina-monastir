@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Espace Membres — Interact Club Ruspina Monastir</title>
+  <meta name="description" content="Espace privé des membres de l’Interact Club Ruspina Monastir.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#07102B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" href="../assets/logos/favicon-icrm.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="members.css?v=20261029224500-task-lifecycle-super-admin-v4">
+</head>
+<body class="pt-body pt-booting">
+
+<a class="pt-skip" href="#main">Aller au contenu</a>
+
+<div class="pt-app" id="app">
+
+  <!-- ===== Barre latérale (tiroir sur mobile / tablette) ===== -->
+  <div class="pt-sidebar" id="sidebar">
+    <a class="pt-sidebar__brand" href="#/dashboard" aria-label="Espace Membres ICRM — Dashboard">
+      <img src="../assets/logos/NEW_ICRM_LOGO.png" alt="" width="1000" height="392">
+      <span>Espace Membres</span>
+    </a>
+
+    <nav class="pt-nav" aria-label="Espace membres" id="navPrimary"></nav>
+
+    <div class="pt-sidebar__foot">
+      <nav class="pt-nav" aria-label="Compte" id="navSecondary"></nav>
+      <div class="pt-userchip" id="userChip"></div>
+    </div>
+  </div>
+  <div class="pt-scrim" id="scrim" hidden></div>
+
+  <!-- ===== Zone principale ===== -->
+  <div class="pt-shell" id="shell">
+    <header class="pt-topbar" id="topbar">
+      <button type="button" class="pt-iconbtn pt-burger" id="burger" aria-expanded="false" aria-controls="sidebar" aria-label="Ouvrir le menu"></button>
+      <p class="pt-crumb"><span>Espace membres</span><span aria-hidden="true">/</span><b id="crumb">Dashboard</b></p>
+    </header>
+
+    <main class="pt-main" id="main" tabindex="-1" aria-busy="true"></main>
+  </div>
+
+  <nav class="pt-tabbar" id="tabbar" aria-label="Accès rapide"></nav>
+</div>
+
+<!-- Chargement : rien de privé n'est affiché avant la validation de la session et du profil -->
+<div class="pt-boot" id="boot" role="status" aria-live="polite">
+  <div class="pt-boot__inner">
+    <img src="../assets/logos/NEW_ICRM_LOGO.png" alt="" width="1000" height="392">
+    <span class="pt-boot__spin" aria-hidden="true"></span>
+    <p id="bootText">Vérification de ta session…</p>
+    <noscript><p>JavaScript est nécessaire pour afficher l’espace membres.</p></noscript>
+  </div>
+</div>
+
+<div class="pt-sr" id="pt-live" aria-live="polite" aria-atomic="true"></div>
+<div class="pt-toasts" id="pt-toasts" role="status" aria-live="polite"></div>
+
+<dialog class="pt-install-dialog" data-install-help aria-labelledby="installHelpTitle">
+  <div class="pt-install-dialog__panel">
+    <div class="pt-install-dialog__top">
+      <span class="pt-install-dialog__symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg></span>
+      <button type="button" class="pt-install-dialog__close" data-install-help-close aria-label="Fermer">×</button>
+    </div>
+    <p class="pt-eyebrow">INTERACT RUSPINA · APPLICATION</p>
+    <h2 id="installHelpTitle" data-install-help-title>Installer ICRM</h2>
+    <p class="pt-install-dialog__intro" data-install-help-intro></p>
+    <ol class="pt-install-dialog__steps"><li data-install-help-step></li><li data-install-help-step></li><li data-install-help-step></li></ol>
+    <p class="pt-install-dialog__note" data-install-help-note hidden></p>
+    <button type="button" class="pt-btn pt-btn--primary pt-install-dialog__confirm" data-install-help-close>J’ai compris</button>
+  </div>
+</dialog>
+
+<!-- Scripts classiques (pas de modules ES : l'aperçu fonctionne aussi en ouvrant le fichier directement) -->
+<!-- Client officiel Supabase (CDN, sans build). Aucune clé secrète : voir js/config.js -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/auth.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/payloads.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/mock-data.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/providers/mock.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/providers/mappers.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/providers/supabase.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/api.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/ui.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/progression.js"></script>
+<script src="js/forms.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/install.js"></script>
+<script src="js/push-config.js?v=20261029210000"></script>
+<script src="js/notifications.js?v=20261029210000"></script>
+<script src="js/views/progression.js"></script>
+<script src="js/views/home.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/views/planning.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/views/xp-admin.js?v=20261029170000-attendance-xp"></script>
+<script src="js/views/club.js"></script>
+<script src="js/views/team-admin.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="js/views/commission.js?v=20261029230000-meeting-minutes-audience-v1"></script>
+<script src="members.js"></script>
+</body>
+</html>
