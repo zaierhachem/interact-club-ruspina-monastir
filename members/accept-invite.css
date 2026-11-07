@@ -1,0 +1,26 @@
+/* ICRM — invitation acceptance. Uses the existing member portal design tokens. */
+.pta-invite-card { gap: 1.25rem; }
+.pta-invite-brand-copy { position: relative; display: grid; gap: .8rem; max-width: 760px; }
+.pta-invite-brand-kicker { color: rgba(255,255,255,.72); font-size: .72rem; font-weight: 700; letter-spacing: .16em; }
+.pta-invite-brand-note { max-width: 34rem; color: rgba(255,255,255,.76); font-size: clamp(.95rem,1.5vw,1.1rem); line-height: 1.55; }
+.pta-invite-card .pta-invite-state { display: grid; gap: 1rem; }
+.pta-invite-email { display: flex; align-items: center; gap: .85rem; min-width: 0; padding: .9rem 1rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.76); }
+.pta-invite-email-icon { width: 2.4rem; height: 2.4rem; flex: 0 0 2.4rem; display: grid; place-items: center; border-radius: 12px; background: rgba(31,79,224,.09); color: var(--blue, #1f4fe0); font-size: 1.1rem; }
+.pta-invite-email > span:nth-child(2) { display: grid; min-width: 0; gap: .15rem; }
+.pta-invite-email small { color: var(--muted); font-size: .76rem; }
+.pta-invite-email strong { overflow-wrap: anywhere; color: var(--ink); font-size: .94rem; font-weight: 650; }
+.pta-invite-verified { margin-left: auto; flex: 0 0 auto; color: var(--ok); font-size: 1.2rem; font-weight: 800; }
+.pta-invite-hint { display: block; margin-top: .35rem; color: var(--muted); font-size: .78rem; }
+.pta-invite-optional { color: var(--muted); font-size: .78rem; font-weight: 400; }
+.pta-invite-card form { gap: 1rem; }
+.pta-invite-card .pt-field input { min-height: 48px; }
+.pta-invite-card .pta-submit { display: flex; align-items: center; justify-content: center; gap: .8rem; margin-top: .25rem; }
+.pta-invite-arrow { font-size: 1.2rem; transition: transform .2s ease; }
+.pta-invite-card .pta-submit:hover .pta-invite-arrow { transform: translateX(3px); }
+.pta-invite-privacy { padding: .8rem .95rem; border-left: 3px solid var(--coral, #f07867); border-radius: 0 10px 10px 0; background: rgba(255,255,255,.58); color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.pta-invite-result-icon { width: 3.2rem; height: 3.2rem; display: grid; place-items: center; border-radius: 50%; background: var(--ok-bg); color: var(--ok); font-size: 1.6rem; font-weight: 800; }
+.pta-invite-result-icon--error { background: var(--warn-bg); color: var(--warn); }
+.pta-invite-loader { width: 2rem; height: 2rem; border: 3px solid rgba(12,21,53,.13); border-top-color: var(--coral, #f07867); border-radius: 50%; animation: pta-invite-spin .8s linear infinite; }
+@keyframes pta-invite-spin { to { transform: rotate(360deg); } }
+@media (max-width: 959px) { .pta-invite-brand-copy { gap: .55rem; } .pta-invite-brand-note { display: none; } }
+@media (prefers-reduced-motion: reduce) { .pta-invite-loader { animation: none; } .pta-invite-arrow { transition: none; } }
