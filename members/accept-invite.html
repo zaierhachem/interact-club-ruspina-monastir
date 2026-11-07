@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Activer mon compte — Espace Membres · Interact Club Ruspina Monastir</title>
+  <meta name="description" content="Finalise ton accès personnel à l’espace membres de l’Interact Club Ruspina Monastir.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#07102B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" href="../assets/logos/favicon-icrm.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="members.css">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="accept-invite.css?v=20261030110000">
+</head>
+<body class="pt-body">
+<a class="pt-skip" href="#invite-main">Aller au formulaire</a>
+
+<div class="pta">
+  <aside class="pta-brand">
+    <svg class="pta-brand__rings" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><circle cx="200" cy="200" r="198"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="102"/><circle cx="200" cy="200" r="56"/></svg>
+    <a class="pta-brand__logo" href="../index.html" aria-label="Interact Club Ruspina Monastir — retour au site public"><img src="../assets/logos/NEW_ICRM_LOGO.png" alt="Interact Club Ruspina Monastir" width="1000" height="392"></a>
+    <div class="pta-invite-brand-copy">
+      <p class="pta-invite-brand-kicker">TON ESPACE · TON ENGAGEMENT</p>
+      <p class="pta-brand__title"><span>Bienvenue</span> <span>dans</span> <span>l’équipe.</span> <span class="hl">À toi de jouer.</span></p>
+      <p class="pta-invite-brand-note">Un espace commun pour organiser nos idées, nos projets et notre impact.</p>
+    </div>
+    <p class="pta-brand__foot">Interact Club Ruspina Monastir · Rotary Club Monastir</p>
+  </aside>
+
+  <main class="pta-main" id="invite-main">
+    <div class="pta-card pta-invite-card" id="inviteCard">
+      <div class="pta-invite-state" id="checkingState" role="status" aria-live="polite">
+        <span class="pta-invite-loader" aria-hidden="true"></span>
+        <p class="pt-eyebrow">INTERACT RUSPINA · ESPACE MEMBRES</p>
+        <h1 class="pta-h1">Préparation de ton invitation</h1>
+        <p class="pta-lede">Nous préparons l’accès sécurisé à ton espace personnel.</p>
+      </div>
+
+      <section class="pta-state" id="inviteStartState" hidden>
+        <div class="pta-invite-result-icon" aria-hidden="true">✉</div>
+        <p class="pt-eyebrow">UNE INVITATION T’ATTEND</p>
+        <h1 class="pta-h1">Confirme ton invitation</h1>
+        <p class="pta-lede">Pour protéger ton compte, la vérification démarre uniquement lorsque tu appuies sur le bouton ci-dessous.</p>
+        <button type="button" class="pt-btn pt-btn--primary pta-submit" id="verifyInviteBtn">Confirmer mon invitation <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section id="setupState" hidden>
+        <p class="pt-eyebrow">INVITATION CONFIRMÉE</p>
+        <h1 class="pta-h1" tabindex="-1" id="inviteTitle">Finalise ton compte</h1>
+        <p class="pta-lede">Complète ton profil et choisis ton mot de passe personnel pour accéder à l’espace membres.</p>
+        <div class="pta-invite-email"><span class="pta-invite-email-icon" aria-hidden="true">✉</span><span><small>Invitation envoyée à</small><strong id="inviteEmail">—</strong></span><span class="pta-invite-verified" aria-label="Invitation vérifiée">✓</span></div>
+        <div class="pta-alert" id="inviteError" role="alert" aria-live="assertive" hidden></div>
+        <form id="inviteForm" novalidate>
+          <div class="pt-field"><label for="fullName">Nom et prénom</label><input id="fullName" name="fullName" type="text" autocomplete="name" maxlength="100" placeholder="Ex. Hachem Zaier" required><small class="pta-invite-hint">Ce nom sera affiché dans l’espace membres.</small></div>
+          <div class="pt-field"><label for="phone">Téléphone <span class="pta-invite-optional">Facultatif</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="32" placeholder="Ex. +216 00 000 000"></div>
+          <div class="pt-field"><label for="password">Créer un mot de passe</label><div class="pta-pw"><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required><button type="button" class="pta-pw__toggle" data-toggle-password="password" aria-pressed="false" aria-label="Afficher le mot de passe"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div><small class="pta-invite-hint">8 caractères minimum.</small></div>
+          <div class="pt-field"><label for="passwordConfirm">Confirmer le mot de passe</label><div class="pta-pw"><input id="passwordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="8" required><button type="button" class="pta-pw__toggle" data-toggle-password="passwordConfirm" aria-pressed="false" aria-label="Afficher la confirmation du mot de passe"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <button type="submit" class="pt-btn pt-btn--primary pta-submit" id="inviteSubmit"><span>Créer mon compte</span><span class="pta-invite-arrow" aria-hidden="true">→</span></button>
+        </form>
+        <p class="pta-invite-privacy">Ton rôle et tes autorisations sont gérés par le club. Cette page ne peut pas les modifier.</p>
+      </section>
+
+      <section class="pta-state" id="invalidState" hidden>
+        <div class="pta-invite-result-icon pta-invite-result-icon--error" aria-hidden="true">!</div>
+        <p class="pt-eyebrow">INVITATION NON VALIDÉE</p>
+        <h1 class="pta-h1">Lien invalide ou expiré</h1>
+        <p class="pta-lede" id="invalidMessage">Ce lien d’invitation n’est plus valable ou a déjà été utilisé. Contacte le bureau exécutif pour recevoir une nouvelle invitation.</p>
+        <a class="pt-btn pt-btn--primary pta-submit" href="login.html">Retour à la connexion</a>
+      </section>
+
+      <section class="pta-state" id="doneState" hidden>
+        <div class="pta-invite-result-icon" aria-hidden="true">✓</div>
+        <p class="pt-eyebrow">CONFIGURATION TERMINÉE</p>
+        <h1 class="pta-h1">Bienvenue au club.</h1>
+        <p class="pta-lede" id="doneMessage">Ton compte membre est prêt. Tu peux maintenant accéder à ton espace personnel.</p>
+        <a class="pt-btn pt-btn--primary pta-submit" id="continueLink" href="index.html">Accéder à l’espace membres <span aria-hidden="true">→</span></a>
+      </section>
+
+      <p class="pta-foot"><a class="pt-link" href="../index.html">← Retour au site public</a><span>Accès privé · Sur invitation uniquement</span></p>
+    </div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/accept-invite.js?v=20261030110000"></script>
+</body>
+</html>
